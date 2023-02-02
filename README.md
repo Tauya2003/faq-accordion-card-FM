@@ -38,7 +38,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Tauya2003/faq-accordion-card-FM](https://github.com/Tauya2003/faq-accordion-card-FM)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://tauya2003.github.io/faq-accordion-card-FM](https://tauya2003.github.io/faq-accordion-card-FM)
 
 ## My process
 
