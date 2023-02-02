@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import './config';
+@import './responsive';
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10em 0;
+    font-size: 12px;
+    background-image: linear-gradient($soft-violet, $soft-blue);
+}
+
+.card{
+    background-color: $white;
+    border-radius: 2em;
+
+    header{
+        position: relative;
+        height: 5rem;
+
+        #img-mobile{
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            width: 70%;
+        }
+
+        #img-desktop{
+            transform: translateX(-18%);
+        }
+
+        #box{
+            transform: translate(-53%, -125%);
+        }
+    }
+
+    section{
+        padding: 2em 0;
+
+        h1{
+            text-transform: uppercase;
+            font-weight: weight('bold');
+            margin-bottom: 1.5rem;
+            color: $very-dark-desaturated-blue;
+            font-size: 2rem;
+        }
+
+        .item{
+            font-weight: weight('regular');
+
+            .hidden{
+                display: none;
+            }
+
+            &_question{
+                padding: 0.2rem 0;
+                color: $dark-grayish-blue;
+
+                
+                span{
+                    float: right;
+                    padding-top: 0.25rem;
+                    content: url('../images/icon-arrow-down.svg');
+                }
+
+                &:hover{
+                    cursor: pointer;
+                    color: $soft-red;
+                }
+            }
+
+            &_answer{
+                padding-top: 0.3rem;
+                width: 90%;
+                font-size: 0.9em;
+                color: $dark-grayish-blue;
+            }
+
+            hr{
+                border: 0;
+                background-color: $light-grayish-blue;
+                height: 0.06rem;
+                margin: 1em 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .card {
+    width: 24em;
+    background-image: url("../images/bg-pattern-mobile.svg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 70%;
+  }
+  .card header #img-desktop {
+    display: none;
+  }
+  .card header #box {
+    display: none;
+  }
+  .card section h1 {
+    text-align: center;
+  }
+  .card section .item {
+    padding: 0 1.75rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60vw;
+    padding: 3rem 0;
+    background: url("../images/bg-pattern-desktop.svg");
+    background-position: 570% 68%;
+    background-repeat: no-repeat;
+  }
+  .card header {
+    height: 100%;
+  }
+  .card header .img-box {
+    overflow: hidden;
+  }
+  .card header #img-mobile {
+    display: none;
+  }
+  .card section {
+    width: 65%;
+  }
+  .card section h1 {
+    text-align: left;
+  }
+  .card section .item {
+    padding: 0.65em 0;
+  }
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 10em 0;
+  font-size: 12px;
+  background-image: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 2em;
+}
+.card header {
+  position: relative;
+  height: 5rem;
+}
+.card header #img-mobile {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  width: 70%;
+}
+.card header #img-desktop {
+  transform: translateX(-18%);
+}
+.card header #box {
+  transform: translate(-53%, -125%);
+}
+.card section {
+  padding: 2em 0;
+}
+.card section h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: hsl(238deg, 29%, 16%);
+  font-size: 2rem;
+}
+.card section .item {
+  font-weight: 400;
+}
+.card section .item .hidden {
+  display: none;
+}
+.card section .item_question {
+  padding: 0.2rem 0;
+  color: hsl(240deg, 6%, 50%);
+}
+.card section .item_question span {
+  float: right;
+  padding-top: 0.25rem;
+  content: url("../images/icon-arrow-down.svg");
+}
+.card section .item_question:hover {
+  cursor: pointer;
+  color: hsl(14deg, 88%, 65%);
+}
+.card section .item_answer {
+  padding-top: 0.3rem;
+  width: 90%;
+  font-size: 0.9em;
+  color: hsl(240deg, 6%, 50%);
+}
+.card section .item hr {
+  border: 0;
+  background-color: hsl(240deg, 5%, 91%);
+  height: 0.06rem;
+  margin: 1em 0;
+}/*# sourceMappingURL=style.css.map */
